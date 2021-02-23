@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}
+    User Creation
+{%endblock%}
+{%block content%}
+    <form action="#" method="post">
+        <p><input type = "number" name="uid" placeholder = "Enter UID" value="{{uid if uid}}"/></p>
+        <p><input type = "email" name="email" placeholder = "Enter Email"/></p>
+        <p><input type = "name" name="nm" placeholder = "Enter name"/></p>
+        <p><input type = "submit" name="submit"/></p>
+    </form>
+{%endblock%}

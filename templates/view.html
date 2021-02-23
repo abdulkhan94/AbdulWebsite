@@ -1,0 +1,12 @@
+{%extends "base.html"%}
+{%block title%}
+    View Users
+{%endblock%}
+{%block content%}
+    {% for item in values%}
+        <p>{{item.uid}} && {{item.name}} && {{item.email}}</p>
+    {%endfor%}
+    {% for i in others%}
+        <p>{{i.jid}} && {{i.desc}} && {{i.uid}}</p>
+    {%endfor%}
+{%endblock%}
