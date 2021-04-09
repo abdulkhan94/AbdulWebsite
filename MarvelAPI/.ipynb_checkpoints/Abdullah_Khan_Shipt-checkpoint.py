@@ -39,7 +39,7 @@ if __name__ == '__main__':
     try:
         # Accepting input
         query = input("Please enter character name: ")
-        query = query.strip().lower() # Accounts for variable entries e.g. tHoR
+        query = query.strip().lower() # Accounts for variable entries e.g. tHoR - did not validate entry for numbers since character names may contain numbers
 
         # Setting required parameters
         TS = str(datetime.now()) # Collecting timestamp for API
