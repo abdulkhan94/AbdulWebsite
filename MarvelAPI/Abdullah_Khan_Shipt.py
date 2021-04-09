@@ -40,6 +40,7 @@ if __name__ == '__main__':
     try:
         # Accepting input
         query = input("Please enter character name: ")
+        assert query
         query = query.strip().lower() # Accounts for variable entries e.g. tHoR - did not validate entry for numbers since character names may contain numbers
 
         # Setting required parameters
@@ -49,7 +50,7 @@ if __name__ == '__main__':
 
         # Making API call to get characterID and total comics
         cid = charComics(parameters) # Getting character dictionary from charComics function
-        assert cid != None # If incorrect character name entered charComics will return None
+        assert cid # If incorrect character name entered charComics will return None
         
         # Printing out
         print(f"{cid['name']} (id:{cid['charid']}) has appeared in a total of {cid['total']} comics in the Marvel Universe")
