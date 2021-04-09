@@ -2,9 +2,6 @@ import requests
 import hashlib
 from datetime import datetime
 
-PUBLIC_KEY = '573866c8f18a3d1333e26ec115b46edd'
-PRIVATE_KEY = 'f70c85c46a2224129cb107203ed3980347398b94'
-
 
 def computeHash(times):
     """
